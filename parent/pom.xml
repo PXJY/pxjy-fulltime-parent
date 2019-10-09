@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.pxjy.fulltime</groupId>
+    <artifactId>parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.9.RELEASE</version>
+    </parent>
+    <developers>
+        <developer>
+            <name>Zhao Jin</name>
+            <email>zhaojin@xuebaclass.com</email>
+            <timezone>UTC+0800</timezone>
+        </developer>
+    </developers>
+    <scm>
+        <connection>scm:git:ssh://git@github.com:PXJY/pxjy-fulltime-parent.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com:PXJY/pxjy-fulltime-parent.git</developerConnection>
+        <url>scm:git:ssh://git@github.com:PXJY/pxjy-fulltime-parent.git</url>
+        <tag>v1.2.753</tag>
+    </scm>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
+                <configuration>
+                    <tagNameFormat>v@{project.version}</tagNameFormat>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
